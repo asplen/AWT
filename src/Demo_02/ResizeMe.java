@@ -33,7 +33,7 @@ public class ResizeMe extends Frame {
 
     public void paint(Graphics g) {
         Insets i = getInsets();
-//        System.out.println("i = " + i);
+
         d = getSize();
         g.drawLine(i.left, i.top, d.width - i.right, d.height - i.bottom);
         g.drawLine(i.left,d.width - i.bottom,d.width - i.right,i.top);

@@ -1,0 +1,10 @@
+Выяснение доступных шрифтов
+(класс GraphicsEnvironment)
+static GraphicsEnvironment getLocalGraphicsEnvironment ()   -  ссылка на GraphicsEnvironment
+
+String [] getAvailableFontFamilyNames()     -возвращает строковый массив, содержащий названия доступных
+                                             семейств шрифтов.
+
+Font[] getAll Fonts()                       -возвращает массив объектов Font для всех доступных шрифтов.
+
+
