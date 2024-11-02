@@ -26,6 +26,6 @@ Demo_02     Использование кнопок
             Обработка событий для кнопок                 ButtonDemo()        Демонстрация использования кнопок (отображение сообщения - Yes, No, Undecided - ПО кнопке)
                                                          ButtonList()        Распознавание объектов Button.
 TEST
-TESTfromWork
+TEST_from_Work
 
 
