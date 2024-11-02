@@ -27,5 +27,6 @@ Demo_02     Использование кнопок
                                                          ButtonList()        Распознавание объектов Button.
 TEST
 TEST_from_Work
+test_AWT
 
 
