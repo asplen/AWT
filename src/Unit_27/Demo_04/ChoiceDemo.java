@@ -18,7 +18,7 @@ public class ChoiceDemo extends Frame implements ItemListener {
 
     public ChoiceDemo() {
         // Использовать поточную компоновку.
-        setLayout((new FlowLayout()));
+        setLayout(new FlowLayout());
         // Создать списки выбор.
         os = new Choice();
         browser = new Choice();
