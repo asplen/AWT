@@ -64,19 +64,15 @@ public class ListDemo extends Frame implements ActionListener {
 
     // Отобразить элементы, выбранные в текущий момент.
     public void paint(Graphics g) {
-        int[] selectedIndexes = os.getSelectedIndexes();
         //Текущая операционная система
         msg = "Current OS: ";
         int[] idx = os.getSelectedIndexes(); // Получаем индексы выбранных элементов
-        for (int i = 0; i < idx.length; i++)
-        {
-            msg += os.getItem(idx[i]) + "   "; // Добавляем выбранные ОС
+        for (int j : idx) {
+            msg += os.getItem(j) + "   "; // Добавляем выбранные ОС
         }
         g.drawString(msg, 20, 120);
         // Текущий браузер
-        msg = "Current Browser: ";
-
-        msg += browser.getSelectedItem();
+        msg = "Current Browser: " + browser.getSelectedItem() + "   ";
 
         // Выводим сообщение на экран
         g.drawString(msg, 20, 140);
