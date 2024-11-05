@@ -1,0 +1,40 @@
+**************************************************************
+Использование текстовых областей
+--------------------------------------------------------------
+В библиотеке АWT предусмотрен простой
+многострочный редактор, реализуемый классом TextArea.
+
+1   TextArea () throws HeadlessException
+2   TextArea (int numLines, int numChars ) throws HeadlessException
+3   TextArea (String str) throws HeadlessException
+4   TextArea (String str, int numLines, int numChars) throws HeadlessException
+5   TextArea ( String str, int numLines, int numChars, int sBars) throws HeadlessException
+
+  numLines  -   передается высота в строках текстовой области,
+  numChars  -   ее ширина в символах.
+  str       -   можно задать первоначальный текст.
+
+  Пятая форма конструктора позволяет указать в параметре sBars
+  полосы прокрутки, которые должен иметь элемент управления, посредством
+  одного из следующих значений:
+
+  SCROLLBARS ВОТН
+  SCROLLBARS HORIZONTAL ONLY
+  SCROLLBARS NONE
+  SCROLLBARS VERTICAL ONLY
+ --------------------------------------------------------------
+ Класс TextArea является подклассом TextComponent, поэтому он
+ поддерживает методы getText (), setText (), getSelectedText (), select (),
+ isEditаblе () и setEditаblе ()
+
+
+ В классе TextArea добавляются новые методы для редактирования:
+ void append ( String str )                 добавляет строку, указанную в str, в конец текущего текста
+ void insert ( String str, int index)       вставляет строку, заданную в str, по указанному индексу.
+ void replaceRange ( String str, int startIndex, int endIndex)      заменяет символы с индекса startIndex по
+                                                                    индекс endIndex-1 текстом замены, переданным в str
+--------------------------------------------------------------
+Текстовые области являются почти автономными элементами управления.
+Накладные расходы, связанные с управлением, в программе практически
+отсутствуют. Обычно при необходимости просто получается текущий текст.
+Однако по желанию можно прослушивать события TextEvent.
