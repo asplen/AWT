@@ -1,6 +1,42 @@
 *******************************************************************************
 Unit_25___Обработка событий
 
+Demo_00     Два механизма обработки событий
+    read_01     Модель делегирования обработки событий
+    read_02     События
+    read_03     Источники событий
+    read_04     Прослушиватели событий
+    read_05     Классы событий:
+    read_06     Класс AdjustmentEvent
+    read_07     Класс ComponentEvent
+    read_08     Класс ContainerEvent
+    read_09     Класс FocusEvent
+    read_10     Класс InputEvent
+    read_11     Класс ItemEvent
+    read_12     Класс KeyEvent
+    read_13     Класс MouseEvent
+    read_14     Класс MouseWheelEvent
+    read_15     Класс TextEvent
+    read_16     Класс WindowEvent
+    read_17     Примеры источников событий
+    read_18     Интерфейсы прослушивателей событий:
+    read_19     Интepфeйc ActionListener
+                Интepфeйc AdjustmentListener
+                Интepфeйc ComponentListener
+                Интepфeйc ContainerListener
+                Интерфейс FocusListener
+                Интерфейс ItemListener
+                Интерфейс KeyListener
+                Интерфейс MouseListener
+                Интepфeйc MouseМotionListener
+                Интepфeйc MouseWheelListener
+                Интерфейс TextListener
+                Интepфeйc WindowFocusListener
+                Интepфeйc WindowListener
+    read_20     Использование модели делегирования обработки событий
+    read_21     Основные концепции графических пользовательских интерфейсов AWT
+
+
 
 
 *******************************************************************************
@@ -41,3 +77,7 @@ Demo_06     Управление полосами прокрутки
 Demo_07     Использование текстовых полей
             Обработка событий для текстовых полей        TextFieldDemo()     классическая экранная форма для ввода имени пользователя и пароля:
 Demo_08     Использование текстовых областей             TextAreaDemo()      Демонстрация использования TextArea
+
+
+
+
