@@ -3,11 +3,18 @@ package Unit_27.Demo_11;
 import java.awt.*;
 import java.awt.event.*;
 
-public class MenuDemo extends Frame {
+/*
+     Демонстрация использования диалогового окна.
+*/
+public class DialogDemo extends Frame {
     String msg = "";
     CheckboxMenuItem debug, test;
+    SampleDialog myDialog;
 
-    public MenuDemo() {
+    public DialogDemo() {
+        //Создать диалоговое окно.
+        myDialog = new SampleDialog(this, "New Dialog Box");
+
         // Создать панель меню и добавить ее во фрейм.
         MenuBar menuBar = new MenuBar();
         setMenuBar(menuBar);
@@ -36,6 +43,7 @@ public class MenuDemo extends Frame {
         sub.add(item11 = new MenuItem("Second"));// Второй
         sub.add(item12 = new MenuItem("Third"));// Третий
         edit.add(sub);
+
         // Создать переключаемые пункты меню.
         debug = new CheckboxMenuItem("Debug");// Отладка
         edit.add(debug);
@@ -46,6 +54,7 @@ public class MenuDemo extends Frame {
 
         // Создать объект для обработки событий действий и элементов.
         MyMenuHandler handler = new MyMenuHandler();
+
         // Зарегистрировать для получения этих событий.
         item1.addActionListener(handler);
         item2.addActionListener(handler);
@@ -87,8 +96,11 @@ public class MenuDemo extends Frame {
             msg = "You selected "; // Выбран пункт меню
 
             String arg = e.getActionCommand();
+            if (arg.equals("New")) {
+                msg+="New Dialog Box";
+                myDialog.setVisible(true);
+            }
             switch (arg) {
-                case "New" -> msg += "New.";
                 case "Open" -> msg += "Open.";
                 case "Close" -> msg += "Close.";
                 case "Edit" -> msg += "Edit.";
@@ -104,6 +116,7 @@ public class MenuDemo extends Frame {
             repaint();
         }
 
+        // Обработать события элементов.
         @Override
         public void itemStateChanged(ItemEvent e) {
             repaint();
@@ -111,10 +124,10 @@ public class MenuDemo extends Frame {
     }
 
     public static void main(String[] args) {
-        MenuDemo demo = new MenuDemo();
+        DialogDemo demo = new DialogDemo();
 
         demo.setVisible(true);
-        demo.setSize(new Dimension(250, 300));
-        demo.setTitle("Menu Demo");
+        demo.setTitle("DialogDemo");
+        demo.setSize(new Dimension(300, 300));
     }
 }
