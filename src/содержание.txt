@@ -40,7 +40,8 @@ Demo_09     Понятие диспетчеров компоновки
             FlowLayout
             BorderLayout                                 BorderLayoutDemo()  Демонстрация использования BorderLayout.
             Использование вставок
-            GridLayout                                   GridLayoutDemo()   создается сетка 4х4, которая заполняется 15 кнопками с пометкой каждой кнопки своим индексом
+            GridLayout                                   GridLayoutDemo()    создается сетка 4х4, которая заполняется 15 кнопками с пометкой каждой кнопки своим индексом
             CardLayout                                   CardLayoutDemo()
-            GridВagLayout                                GridBagDemo()      Демонстрация использования GridBagLayout.
+            GridВagLayout                                GridBagDemo()       Демонстрация использования GridBagLayout.
+Demo_11     Меню и панели меню                           MenuDemo()          Демонстрация использования меню.
 
