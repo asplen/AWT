@@ -99,6 +99,10 @@ Demo_02
 Demo_03
     read_01     ImageProducer
                 MemoryImageSource                        MemoryImageGenerator()      Создание изображения в памяти.
+Demo_04
+    read_01     ImageConsumer                            HistoGrab()                Пример захвата пикселей из изображения и создания гистограммы
+                                                                                    яркости пикселей.
+
 
 _______________________________________
 
