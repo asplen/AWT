@@ -17,7 +17,6 @@ import java.io.IOException;
  */
 public class HistoGrab extends Frame {
 
-    Dimension d;
     Image img;
     int iw, ih;
     int[] pixels;
@@ -35,10 +34,10 @@ public class HistoGrab extends Frame {
             pixels = new int[iw * ih];
             PixelGrabber pg = new PixelGrabber(img, 0, 0, iw, ih, pixels, 0, iw);
             pg.grabPixels();
-        } catch (InterruptedException е) {
+        } catch (InterruptedException e) {
             System.out.println("Interrupted ");
             return;
-        } catch (IOException ехс) {
+        } catch (IOException e) {
             System.out.println("He удалось загрузить файл изображения.");
             System.exit(0);
         }
