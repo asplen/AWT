@@ -1,0 +1,34 @@
+**************************************************************
+ImageFilter
+--------------------------------------------------------------
+При наличии пары интерфейсов ImageProducer и ImageConsumer, а также
+реализующих эти интерфейсы конкретных классов MemoryImageSource и PixelGrabber
+можно создать произвольный набор трансляционных фильтров,
+которые получают пиксел и из источника, изменяют их и передают
+произвольному потребителю.
+
+Такой механизм аналогичен способу создания
+конкретных классов из абстрактных классов ввода-вывода InputStream,
+OutputStream, Reader и Writer (описанных в главе 22).
+
+Эта потоковая модель для изображений дополняется введением класса ImageFilter.
+
+В число подклассов ImageFilter внутри пакета java.awt.image входят :
+
+AreaAveragingScaleFilter
+CropImageFilter
+ReplicateScaleFilter
+RGBImageFilter
+
+Существует также реализация интерфейса ImageProducer
+по имени FilteredImageSource, которая помещает ImageFilter в
+оболочку ImageProducer с целью фильтрации создаваемых им пикселей.
+
+Экземпляр FilteredImageSource можно применять как объект реализации
+ImageProducer в вызовах метода createImage() во многом аналогично
+возможности использования BufferedInputStream в качестве InputStream.
+
+В главе исследуются два фильтра: CropImageFilter и RGBImageFilter.
+
+
+
