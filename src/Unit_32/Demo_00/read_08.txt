@@ -1,0 +1,33 @@
+*******************************************************************************
+Пакеты Swing
+_______________________________________
+Инфраструктура Swing - очень крупная подсистема, которая использует
+множество пакетов.
+
+На момент написания книги в Swing были определены
+перечисленные ниже пакеты:
+javax.swing
+javax.swing.border
+javax.swing.colorchooser
+javax.swing.event
+javax.swing.filechooser
+javax.swing.plaf
+javax.swing.plaf.basic
+javax.swing.plaf.metal
+javax.swing.plaf.multi
+javax.swing.plaf.nimЬus
+javax.swing.plaf.synth
+javax.swing.table
+javax.swing.text
+javax.swing.text . html
+javax.swing.text.html.parser
+javax.swing.text.rt f
+javax.swing.tree
+javax.swing.undo
+
+Начиная с версии JDK 9, пакеты Swing находятся в модуле java.desktop.
+
+Главным пакетом является javax.swing, который необходимо импортировать в
+любую программу, где применяется Swing.
+
+Он содержит классы, реализующие основные компоненты Swing, такие, как кнопки, метки и флажки.
