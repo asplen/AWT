@@ -132,7 +132,10 @@ Unit_33___Исследование Swing
 
 Demo_01
     read_01     введение
-    read_02     JLaЬel и ImageIcon                      JLabelDemo()    создание и отображение метки, содержащей значок и строку.
+    read_02     JLaЬel и ImageIcon                      JLabelDemo()        создание и отображение метки, содержащей значок и строку.
+Demo_02
+    read_01     JTextField                              JTextFieldDemo()    Демонстрация  JTextField
+
 
 _______________________________________
 
