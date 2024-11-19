@@ -11,8 +11,8 @@ public class JLabelDemo {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize (400, 400);
 
-//        ImageIcon ii = new ImageIcon("hourglass.png");// Создать значок.
-        ImageIcon ii = new ImageIcon(Objects.requireNonNull(getClass().getResource("hourglass.png")));// Создать значок.
+//        ImageIcon ii = new ImageIcon("icon.png");// Создать значок.
+        ImageIcon ii = new ImageIcon(Objects.requireNonNull(getClass().getResource("icon.png")));// Создать значок.
 
         // Создать метку.
         JLabel j1 = new JLabel ( "Hourglass", ii, JLabel . CENTER) ;

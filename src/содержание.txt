@@ -135,6 +135,9 @@ Demo_01
     read_02     JLaЬel и ImageIcon                      JLabelDemo()        создание и отображение метки, содержащей значок и строку.
 Demo_02
     read_01     JTextField                              JTextFieldDemo()    Демонстрация  JTextField
+Demo_03
+    read_01     Кнопки Swing
+    read_02     JButton                                 JButtonDemo()       значок, представляющий часы определенного вида
 
 
 _______________________________________
