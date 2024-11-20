@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.util.Objects;
 
 public class JButtonDemo implements ActionListener {
-    JLabel jlab;
+    JLabel label;
 
     JButtonDemo() {
         JFrame frame = new JFrame("JButton Demo");
@@ -41,16 +41,16 @@ public class JButtonDemo implements ActionListener {
         frame.add(jb);
 
         // Создать метку и добавить ее в панель содержимого.
-        jlab = new JLabel("Choose а Тimepiece");
-        // Выберите часы
-        frame.add(jlab);
+        label = new JLabel("Choose а Timepiece");// Выберите часы
+
+        frame.add(label);
         // Отобразить фрейм.
         frame.setVisible(true);
     }
 
     // Обработать события кнопок.
     public void actionPerformed(ActionEvent e) {
-        jlab.setText("You selected :" + e.getActionCommand()); // Вы выбрали
+        label.setText("You selected :" + e.getActionCommand()); // Вы выбрали
 
     }
 

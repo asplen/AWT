@@ -138,6 +138,9 @@ Demo_02
 Demo_03
     read_01     Кнопки Swing
     read_02     JButton                                 JButtonDemo()       значок, представляющий часы определенного вида
+Demo_04
+    read_01     JToggleButton                           JToggleButtonDemo() пример применения переключателя
+
 
 
 _______________________________________

@@ -15,7 +15,7 @@ _______________________________________
 один значок можно применять в качестве трансформируемого значка, который отображается, когда курсор
 мыши располагается над кнопкой. Такие значки устанавливаются с использованием следующих методов:
 
-void setDisbledIcon ( Icon di)
+void setDisabledIcon ( Icon di)
 void setPressedIcon ( Icon pi)
 void setSelectedIcon ( Icon si)
 void setRolloverIcon ( Icon ri)
