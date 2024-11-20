@@ -140,8 +140,9 @@ Demo_03
     read_02     JButton                                 JButtonDemo()       значок, представляющий часы определенного вида
 Demo_04
     read_01     JToggleButton                           JToggleButtonDemo() пример применения переключателя
-
-
+Demo_05
+    read_01     Флажки
+                JCheckBox                               JCheckBoxDemo()     четыре флажка и метка
 
 _______________________________________
 

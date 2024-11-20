@@ -3,7 +3,7 @@
 _______________________________________
 В Swing определены четыре типа кнопок:
 1   JButton,
-2   JТoggleButton,
+2   JToggleButton,
 3   JCheckBox
 4   JRadioButton.
 
