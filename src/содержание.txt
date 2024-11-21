@@ -148,7 +148,8 @@ Demo_06
                 JRadioButton                            JRadioButtonDemo()  три переключателя, после чего они добавляются в группу.
 Demo_07
     read_01     JTabbedPane                             JTabbedPaneDemo()   панели с вкладками (Города,Цвета,Ароматы)
-
+Demo_08
+    read_01     JScrollPane                             JScrollPaneDemo()   400 кнопок, расположенных в 20 колонках.
 
 _______________________________________
 
