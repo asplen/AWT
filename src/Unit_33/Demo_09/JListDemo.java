@@ -7,10 +7,10 @@ import java.awt.*;
 
 public class JListDemo {
     // Создать список городов.
-    String[] cities = {"New Yor k", "Chicago ", "Houston ",
-            "Denver ", "Los Angeles", "Seattle",
-            "London ", " Paris", "New Delhi",
-            "Hong Kong ", " Tokyo", " Sydney"};
+    String[] cities = {"New York", "Chicago ", "Houston ",
+            "Denver", "Los Angeles", "Seattle",
+            "London ", "Paris", "New Delhi",
+            "Hong Kong ", "Tokyo", "Sydney"};
 
     public JListDemo() {
         // Настроить JFrame .
@@ -47,11 +47,10 @@ public class JListDemo {
         jfrm.add(jscrlp);
         jfrm.add(jlab);
         // Отобразить фрейм.
-        jfrm .setVisible(true);
+        jfrm.setVisible(true);
     }
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(JListDemo::new);
     }
-
 }

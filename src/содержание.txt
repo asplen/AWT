@@ -28,13 +28,15 @@ Demo_00     Два механизма обработки событий
                 Интерфейс ItemListener
                 Интерфейс KeyListener
                 Интерфейс MouseListener
-                Интepфeйc MouseМotionListener
+                Интepфeйc MouseMotionListener
                 Интepфeйc MouseWheelListener
                 Интерфейс TextListener
                 Интepфeйc WindowFocusListener
                 Интepфeйc WindowListener
     read_20     Использование модели делегирования обработки событий
     read_21     Основные концепции графических пользовательских интерфейсов AWT
+Demo_01
+    read_01     Обработка событий мыши                      MouseEventsDemo()    Демонстрация обработчиков событий мыши
 
 
 *******************************************************************************
