@@ -28,7 +28,7 @@ Demo_00     Два механизма обработки событий
                 Интерфейс ItemListener
                 Интерфейс KeyListener
                 Интерфейс MouseListener
-                Интepфeйc MouseMotionListener
+                Интepфeйc MouseМotionListener
                 Интepфeйc MouseWheelListener
                 Интерфейс TextListener
                 Интepфeйc WindowFocusListener
