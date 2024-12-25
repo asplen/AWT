@@ -16,25 +16,25 @@ public class JButtonDemo implements ActionListener {
         frame.setSize(500, 450);
 
         //добавить кнопки в панель содержимого
-        ImageIcon hourglass = new ImageIcon(Objects.requireNonNull(getClass().getResource("hourglass.png")));// Создать значок.
+        ImageIcon hourglass = new ImageIcon(Objects.requireNonNull(getClass().getResource("/img/hourglass.png")));// Создать значок.
         JButton jb = new JButton(hourglass);
         jb.setActionCommand("   Hourglass");// песочные часы
         jb.addActionListener( this);
         frame.add(jb);
 
-        ImageIcon analog = new ImageIcon(Objects.requireNonNull(getClass().getResource("analog.png")));// Создать значок.
+        ImageIcon analog = new ImageIcon(Objects.requireNonNull(getClass().getResource("/img/analog.png")));// Создать значок.
         jb = new JButton(analog);
         jb.setActionCommand("   Analog Clock");// стрелочные часы
         jb.addActionListener( this);
         frame.add(jb);
 
-        ImageIcon digital = new ImageIcon(Objects.requireNonNull(getClass().getResource("digital.png")));// Создать значок.
+        ImageIcon digital = new ImageIcon(Objects.requireNonNull(getClass().getResource("/img/digital.png")));// Создать значок.
         jb = new JButton(digital);
         jb.setActionCommand("   Digital Clock");//  цифровые часы
         jb.addActionListener(this);
         frame.add(jb);
 
-        ImageIcon stopwatch = new ImageIcon(Objects.requireNonNull(getClass().getResource("stopwatch.png")));// Создать значок.
+        ImageIcon stopwatch = new ImageIcon(Objects.requireNonNull(getClass().getResource("/img/stopwatch.png")));// Создать значок.
         jb = new JButton(stopwatch);
         jb.setActionCommand("   Stopwatch");//  секундомер
         jb.addActionListener( this);

@@ -6,7 +6,7 @@ public class JTabbedPaneDemo {
     public JTabbedPaneDemo() {
         // Настроить JFrame.
         JFrame frame = new JFrame("JTabbedPaneDemo");
-        frame.setSize(400, 200);
+        frame.setSize(450, 250);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // Создать панель с вкладками.

@@ -10,27 +10,27 @@ public class JToggleButtonDemo {
     public JToggleButtonDemo() {
         // Настроить JFrame.
         JFrame frame = new JFrame("JToggleButtonDemo");
-        frame.setSize(200, 100);
+        frame.setSize(400, 100);
         frame.setLayout(new FlowLayout());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //создать метку
-        JLabel label = new JLabel("Button is off.");// Кнопка выключена
+        JLabel label = new JLabel("Нажми на кнопку.");// Кнопка выключена
         //создать переключатель
-        JToggleButton toggleButton = new JToggleButton("On/Off");
+        JToggleButton toggleButton = new JToggleButton("я_Кнопка");
 
         // Добавить прослушиватель событий элементов для переключателя.
         toggleButton.addItemListener(new ItemListener() {
             public void itemStateChanged(ItemEvent e) {
                 if (toggleButton.isSelected()) {
-                    toggleButton.setText("Button is оп");// Кнопка включена
-                } else toggleButton.setText("Button is off.");// Кнопка выключена
+                    toggleButton.setText("включена");// Кнопка включена
+                } else toggleButton.setText("выключена.");// Кнопка выключена
             }
         });
 
         // Добавить переключатель и метку в панель содержимого
-        frame.add(toggleButton);
         frame.add(label);
+        frame.add(toggleButton);
 
         frame.setVisible(true);// Отобразить фрейм.
     }
